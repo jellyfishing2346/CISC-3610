@@ -3,7 +3,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light grey background */
+    background-color: #e9ecef; /* Light gray background for a soft feel */
     color: #333; /* Dark text for readability */
 }
 
@@ -15,9 +15,9 @@ body {
     padding: 20px;
 }
 
-/* Header styles */
+/* Header styles with gradient */
 header {
-    background: linear-gradient(135deg, #4CAF50, #2c3e50); /* Green to Dark Blue gradient */
+    background: linear-gradient(135deg, #2c3e50, #4CAF50); /* Green to Dark Blue gradient */
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -55,7 +55,7 @@ header nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
 }
 
-/* Section styling */
+/* Section styling with background colors */
 section {
     margin: 60px 0;
 }
@@ -90,7 +90,7 @@ a:hover {
 
 /* About Section */
 #about {
-    background-color: white;
+    background-color: #ffffff; /* Solid white background for contrast */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
-/* Projects Section */
+/* Projects Section with alternating background colors */
 .project {
     background-color: #fff;
     padding: 30px;
@@ -123,13 +123,26 @@ a:hover {
     margin-top: 15px;
 }
 
-/* Gradient background for sections */
+/* Gradient background for the About section */
 #about {
     background: linear-gradient(135deg, #f3f4f7, #ffffff);
 }
 
+/* Alternate background color for every other project */
 .project:nth-child(even) {
-    background-color: #f9f9f9; /* Light grey for alternate project cards */
+    background-color: #f9f9f9; /* Light grey for alternate projects */
+}
+
+/* Adding color to section backgrounds */
+#projects {
+    background: #f2f4f7; /* Light background for projects section */
+    padding: 40px 0;
+}
+
+#contact {
+    background: #007bff; /* Blue background for the contact section */
+    color: white;
+    padding: 40px 0;
 }
 
 /* Card hover effect for project items */
