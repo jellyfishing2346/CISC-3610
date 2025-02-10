@@ -6,12 +6,13 @@ body {
     padding: 0;
 }
 
-/* About Section with Darker Blue-Green Gradient */
+/* About Section with Darker Blue-Green Gradient and White Background */
 #about {
-    background: linear-gradient(135deg, #2c3e50, #4CAF50);
+    background: linear-gradient(135deg, #f3f4f7, #ffffff); /* Gradient from light gray to white */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 /* Projects Section with Slightly Darker Tones */
@@ -108,20 +109,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* About Section */
-#about {
-    background-color: #ffffff; /* Solid white background for contrast */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-#about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 /* Projects Section with alternating background colors */
 .project {
     background-color: #fff;
@@ -143,11 +130,6 @@ a:hover {
     margin-top: 15px;
 }
 
-/* Gradient background for the About section */
-#about {
-    background: linear-gradient(135deg, #f3f4f7, #ffffff);
-}
-
 /* Alternate background color for every other project */
 .project:nth-child(even) {
     background-color: #f9f9f9; /* Light grey for alternate projects */
@@ -156,12 +138,6 @@ a:hover {
 /* Adding color to section backgrounds */
 #projects {
     background: #f2f4f7; /* Light background for projects section */
-    padding: 40px 0;
-}
-
-#contact {
-    background: #007bff; /* Blue background for the contact section */
-    color: white;
     padding: 40px 0;
 }
 
