@@ -12,8 +12,11 @@ Welcome to my portfolio of CISC 3610 assignments! This repository contains all o
 ## Assignment 1: Matrix Addition
 
 **Date Completed:** TBD 
+
 **Description:** TBD
-**Key Concepts:** TBD  
+
+**Key Concepts:** TBD 
+
 **How to Run:**   TBD
 
 
