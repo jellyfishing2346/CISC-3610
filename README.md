@@ -23,15 +23,21 @@ Welcome to my portfolio of CISC 3610 assignments! This repository contains all o
 ## Assignment 2: Data Structures
 
 **Date Completed:** TBD 
+
 **Description:** TBD
+
 **Key Concepts:** TBD  
+
 **How to Run:**   TBD
 
 ## Assignment 3: Algorithm Analysis
 
 **Date Completed:** TBD 
+
 **Description:** TBD
+
 **Key Concepts:** TBD  
+
 **How to Run:**   TBD
 
 ## Contact Information
