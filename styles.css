@@ -1,10 +1,30 @@
-/* General Styles */
+/* Global Body Background with Dark Blue-Green Gradient */
 body {
+    background: linear-gradient(135deg, #2c3e50, #4CAF50); /* Dark Blue to Green */
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e9ecef; /* Light gray background for a soft feel */
-    color: #333; /* Dark text for readability */
+}
+
+/* About Section with Darker Blue-Green Gradient */
+#about {
+    background: linear-gradient(135deg, #2c3e50, #4CAF50);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section with Slightly Darker Tones */
+#projects {
+    background: linear-gradient(135deg, #34495e, #27ae60); /* Darker blue to vibrant green */
+    padding: 40px 0;
+}
+
+/* Contact Section with Green-Blue Gradient */
+#contact {
+    background: linear-gradient(135deg, #1abc9c, #16a085); /* More vibrant green tones */
+    color: white;
+    padding: 40px 0;
 }
 
 /* Container for better layout */
