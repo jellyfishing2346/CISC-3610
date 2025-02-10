@@ -7,7 +7,7 @@ body {
 }
 
 /* About Section with Darker Blue-Green Gradient and White Background */
-#about {
+.about {
     background: linear-gradient(135deg, #f3f4f7, #ffffff); /* Gradient from light gray to white */
     padding: 40px;
     border-radius: 8px;
@@ -16,13 +16,13 @@ body {
 }
 
 /* Projects Section with Slightly Darker Tones */
-#projects {
+.project {
     background: linear-gradient(135deg, #34495e, #27ae60); /* Darker blue to vibrant green */
     padding: 40px 0;
 }
 
 /* Contact Section with Green-Blue Gradient */
-#contact {
+.contact {
     background: linear-gradient(135deg, #1abc9c, #16a085); /* More vibrant green tones */
     color: white;
     padding: 40px 0;
