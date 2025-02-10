@@ -6,7 +6,7 @@ Welcome to my portfolio of CISC 3610 assignments! This repository contains all o
 
 - [Assignment 1: TBD](#assignment-1)
 - [Assignment 2: TBD](#assignment-2)
-- [Assignment 3: TBD](#assignment-3
+- [Assignment 3: TBD](#assignment-3)
 - [Contact Information](#contact-information)
 
 ## Assignment 1: Matrix Addition
