@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faizan Khan | Projects - CISC 3610</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -26,19 +28,49 @@
         <div class="container">
             <h2>My Projects</h2>
 
-            <!-- Project 1 -->
-            <div class="project">
-                <h3>Scene Project: Moody Characters</h3>
-                <img src="images/Moody-Characters.png" alt="Moody Characters Scene" height="500" width="500">
-                <p><strong>Description:</strong> Create a visually appealing scene using the HTML5 <canvas> element. The scene should include:
-                    <li>A background image</li>
-                    <li>At least two foreground images</li>
-                    <li>Text displaying your name and the scene title</li>
-                </p>
-                <ul>
-                    <li><strong>Technologies:</strong> HTML and Javascript</li>
-                    <li><strong>Code:</strong> <a href="https://iridescent-youtiao-87be0b.netlify.app/">Moody Characters</a></li>
-                </ul>
+            <!-- Swiper Slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide project">
+                        <h3>Scene Project: Moody Characters</h3>
+                        <img src="images/Moody-Characters.png" alt="Moody Characters Scene">
+                        <p><strong>Description:</strong> Create a visually appealing scene using the HTML5 <canvas> element. The scene includes:
+                        <ul>
+                            <li>A background image</li>
+                            <li>At least two foreground images</li>
+                            <li>Text displaying your name and the scene title</li>
+                        </ul>
+                        </p>
+                        <ul>
+                            <li><strong>Technologies:</strong> HTML and JavaScript</li>
+                            <li><strong>Code:</strong> <a href="https://iridescent-youtiao-87be0b.netlify.app/" target="_blank">Moody Characters</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="swiper-slide project">
+                        <h3>BMI Calculator</h3>
+                        <img src="images/BMI-Calculator.png" alt="BMI Calculator">
+                        <p><strong>Description:</strong> 
+                            Offer a math, business, science, other type of display that uses a formula to display information.
+                            Use text fields, and either radio buttons or checkboxes (perhaps other components if you wish) for a user to enter information in the formula.
+                        <ul>
+                            <li>Display the results on the screen.</li>
+                            <li>Use a fancy background to make the elements appear on or near a related <a href="https://www.w3schools.com/howto/howto_css_form_on_image.asp">image</a></li>
+                            <li>Use images in your display</li>
+                        </ul>
+                        </p>
+                        <ul>
+                            <li><strong>Technologies:</strong> HTML, CSS, and JavaScript</li>
+                            <li><strong>Code:</strong> <a href="https://gentle-salamander-52ab3f.netlify.app/" target="_blank">BMI Calculator</a></li>
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
         </div>
@@ -47,5 +79,27 @@
     <footer>
         <p>&copy; 2025 Faizan Khan | CISC 3610 Portfolio</p>
     </footer>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
 </body>
 </html>

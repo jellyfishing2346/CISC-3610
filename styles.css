@@ -109,6 +109,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Swiper Container */
+.swiper-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
 /* Projects Section with alternating background colors */
 .project {
     background-color: #fff;
@@ -139,12 +147,22 @@ a:hover {
 #projects {
     background: #f2f4f7; /* Light background for projects section */
     padding: 40px 0;
+    text-align: center;
 }
 
 /* Card hover effect for project items */
 .project:hover {
     background-color: #f4f8fb; /* Lighten the background when hovered */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow effect */
+}
+
+/* Swiper Navigation and Pagination */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background: #4CAF50;
 }
 
 /* Buttons (optional, for calls-to-action like contact) */
