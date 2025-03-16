@@ -4,28 +4,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* About Section with Darker Blue-Green Gradient and White Background */
-.about {
-    background: linear-gradient(135deg, #f3f4f7, #ffffff); /* Gradient from light gray to white */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-/* Projects Section with Slightly Darker Tones */
-.project {
-    background: linear-gradient(135deg, #34495e, #27ae60); /* Darker blue to vibrant green */
-    padding: 40px 0;
-}
-
-/* Contact Section with Green-Blue Gradient */
-.contact {
-    background: linear-gradient(135deg, #1abc9c, #16a085); /* More vibrant green tones */
-    color: white;
-    padding: 40px 0;
+    color: #333; /* Default text color */
 }
 
 /* Container for better layout */
@@ -76,9 +55,79 @@ header nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
 }
 
-/* Section styling with background colors */
-section {
-    margin: 60px 0;
+/* Projects Section */
+#projects {
+    background: #f2f4f7; /* Light background for projects section */
+    padding: 40px 0; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    max-width: 1200px; /* Limit the width for better control */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 0; /* Add padding for spacing */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Swiper Slides */
+.swiper-slide {
+    width: 100%;
+    max-width: 100%; /* Ensure slides don't overflow */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding inside slides */
+}
+
+/* Project Content */
+.project {
+    width: 100%; /* Ensure the project takes full width of the slide */
+    max-width: 100%; /* Prevent overflow */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    background-color: #fff; /* White background for projects */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+}
+
+/* Images Inside Slides */
+.project img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-top: 15px; /* Add spacing above images */
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #4CAF50; /* Green color for buttons */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px; /* Add padding */
+    border-radius: 50%; /* Circular buttons */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid white on hover */
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background: #4CAF50; /* Green color for pagination bullets */
+    opacity: 0.5; /* Semi-transparent */
+    width: 10px; /* Fixed width */
+    height: 10px; /* Fixed height */
+    margin: 0 5px; /* Add spacing between bullets */
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1; /* Solid color for active bullet */
 }
 
 /* Footer styling */
@@ -88,95 +137,4 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
-}
-
-/* Header h2 for section titles */
-h2 {
-    font-size: 2.5em;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Basic link styling */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Swiper Container */
-.swiper-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-/* Projects Section with alternating background colors */
-.project {
-    background-color: #fff;
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-/* Alternate background color for every other project */
-.project:nth-child(even) {
-    background-color: #f9f9f9; /* Light grey for alternate projects */
-}
-
-/* Adding color to section backgrounds */
-#projects {
-    background: #f2f4f7; /* Light background for projects section */
-    padding: 40px 0;
-    text-align: center;
-}
-
-/* Card hover effect for project items */
-.project:hover {
-    background-color: #f4f8fb; /* Lighten the background when hovered */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow effect */
-}
-
-/* Swiper Navigation and Pagination */
-.swiper-button-next, .swiper-button-prev {
-    color: #fff;
-}
-
-.swiper-pagination-bullet {
-    background: #4CAF50;
-}
-
-/* Buttons (optional, for calls-to-action like contact) */
-button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background-color: #2c6f34;
 }
