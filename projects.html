@@ -122,23 +122,20 @@
     <!-- Swiper.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
-        });
+         var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Only one slide visible at a time
+        spaceBetween: 20, // Space between slides
+        loop: true, // Enable infinite loop
+        navigation: {
+            nextEl: '.swiper-button-next', // Next button
+            prevEl: '.swiper-button-prev', // Previous button
+        },
+        pagination: {
+            el: '.swiper-pagination', // Pagination dots
+            clickable: true, // Allow clicking on pagination dots to navigate
+        },
+        // Remove breakpoints for now to ensure only one slide is visible
+    });
     </script>
 </body>
 </html>
