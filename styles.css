@@ -102,6 +102,24 @@ header nav ul li a:hover {
     margin-top: 15px; /* Add spacing above images */
 }
 
+.swiper-container {
+    position: relative;
+    padding-bottom: 40px; /* Add space at bottom for pagination */
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px !important; /* Force it to bottom */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-slide {
+    height: auto; /* Ensure slides don't force container height */
+    margin-bottom: 20px; /* Add space between slides and pagination */
+}
+
 /* Swiper Navigation Buttons */
 .swiper-button-next, .swiper-button-prev {
     color: #4CAF50; /* Green color for buttons */
